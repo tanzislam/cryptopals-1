@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 
   for (size_t i = 0; i < GUESSLEN; i++)
   {
-    uint8_t best;
+    uint8_t best = 0u;
     int best_score = 0xffff;
 
     for (int guess = 0; guess < 256; guess++)

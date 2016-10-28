@@ -48,12 +48,13 @@ bin/mcp55: mcp55.o sph/md4.o
 bin/mcp56: mcp56.o
 
 bin/%:
+	mkdir bin || true
 	$(CC) -o $@ $^ $(CFLAGS) $(LDFLAGS)
-	
+
 clean:
 	$(RM) $(TARGETS) *.o *.pyc web/*.pyc web/*/*.pyc
 
-test:
+test: $(TARGETS)
 	./run-tests-1.sh
 	./run-tests-2.sh
 	./run-tests-3.sh
