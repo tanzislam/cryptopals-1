@@ -1,4 +1,4 @@
-cryptopals
+cryptopals [![TrustInSoft CI](https://ci.trust-in-soft.com/projects/tanzislam/cryptopals-1.svg?branch=master)](https://ci.trust-in-soft.com/projects/tanzislam/cryptopals-1)
 ==========
 
 These are cryptopals/Matasano crypto challenges answers.
