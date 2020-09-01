@@ -10,6 +10,10 @@
 #include <ctype.h>
 #include <time.h>
 
+#ifdef __TRUSTINSOFT_ANALYZER__ 
+  #define encrypt my_encript
+#endif
+
 typedef struct block
 {
   size_t ulen;
